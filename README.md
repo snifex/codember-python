@@ -1,9 +1,11 @@
-# codember-python
+<div align="center">
+  # codember-python
 
-![codember-banner](./assets/images/codember.webp)
+  ![codember-banner](./assets/images/codember.webp)
+  
+  # [Codember](https://codember.dev)
 
-# [Codember](https://codember.dev)
-
+</div>
 <hr>
 
 Resolución de los retos propuestos por [midudev](https://twitter.com/midudev) en el reto de codember resueltos en Python y Pistas para los easter eggs
