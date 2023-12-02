@@ -8,7 +8,7 @@ def read_lines(filename: str):
         Returns
             lines (list): A List with each line of the txt
     """
-    with open(filename, 'r', encoding="UTF-8") as txt_file:
+    with open(f"./assets/{filename}", 'r', encoding="UTF-8") as txt_file:
         for line in txt_file:
             yield line
 
@@ -19,7 +19,7 @@ def write_archive(name_archive: str, lista:list) -> None:
         name_archive (str): Name of the result archive
         lista (list): List to write
     """
-    with open(name_archive + ".txt", "w", encoding="utf-8") as output_file:
+    with open(f"./results/{name_archive}.txt", "w", encoding="utf-8") as output_file:
         text_formatted = (f"{i}\n" for i in lista)
         output_file.writelines(text_formatted)
 

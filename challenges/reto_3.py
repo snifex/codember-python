@@ -41,7 +41,7 @@ def find_password(number_password: int = 0) -> list:
     
     result_list = []
     # Get each line of the txt file 
-    for line in read_lines("encryption_policies.txt"):
+    for line in read_lines("./assets/encryption_policies.txt"):
         #Get the letter of the encryption of this line
         letter_line = line[line.find(":") - 1:line.find(":")]
 

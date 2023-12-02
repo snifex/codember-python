@@ -8,7 +8,7 @@ def read_txt(filename: str) -> list:
         Returns
             lines (list): A List with each line of the txt
     """
-    with open(filename, 'r', encoding="UTF-8") as txt_file:
+    with open(f"./assets/{filename}", 'r', encoding="UTF-8") as txt_file:
         lines = [iterator.rstrip() for iterator in txt_file]
     return lines
 
