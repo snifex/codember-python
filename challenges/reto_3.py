@@ -14,20 +14,20 @@ def read_lines(filename: str):
         for line in txt_file:
             yield line
 
-def write_archive(name_archive: str, lista:list) -> None:
-    """Write an archive with a tuple
+# def write_archive(name_archive: str, lista:list) -> None:
+#     """Write an archive with a tuple
 
-    Args:
-        name_archive (str): Name of the result archive
-        lista (list): List to write
-    """
-    with open(name_archive + ".txt", "w", encoding="utf-8") as output_file:
-        text_formatted = (f"{i}\n" for i in lista)
-        output_file.writelines(lista)
+#     Args:
+#         name_archive (str): Name of the result archive
+#         lista (list): List to write
+#     """
+#     with open(name_archive + ".txt", "w", encoding="utf-8") as output_file:
+#         text_formatted = (f"{i}\n" for i in lista)
+#         output_file.writelines(text_formatted)
     
 def main():
-    result_list = find_password()
-    write_archive("list_wrongs",result_list)
+    find_password()
+    # write_archive("list_wrongs",result_list)
     
 def find_password(number_password: int = 0) -> list:
     """Get the password of the given number list, if the number is not provided return the first one
